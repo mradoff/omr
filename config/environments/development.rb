@@ -37,4 +37,6 @@ Rails.application.configure do
 
   # Required for Devise gem
   config.action_mailer.default_url_options = { host: 'http://pintsizerest.herokuapp.com/' }
+
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
 end
